@@ -23,7 +23,7 @@ function calcularIMC() {
     } else if (imc >= 30 && imc < 35) {
         mensaje = 'SI me dices que huelo bien, es halago o amenaza?';
     } else if (imc >= 35) {
-        mensaje = 'Bb me avisas cuando sales en kilos mortales';
+        mensaje = 'Bb me avisas cuando salgas en kilos mortales';
     }
 
     document.getElementById('resultado').innerText = mensaje;
