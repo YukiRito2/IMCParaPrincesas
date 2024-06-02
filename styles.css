@@ -81,6 +81,30 @@ button:hover {
     transition: opacity 0.5s ease, transform 0.3s ease;
 }
 
+#barbie-img-top {
+    position: absolute;
+    top: 3px;
+    /* Ajusta la posición para PC */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    /* Ajusta el tamaño de la imagen */
+    z-index: 999;
+    /* Asegura que la imagen esté encima de todo */
+}
+
+/* Media query para pantallas pequeñas (celulares) */
+@media only screen and (max-width: 600px) {
+    #barbie-img-top {
+        top: 32px;
+        /* Ajusta la posición para celulares */
+        width: 120px;
+        /* Ajusta el tamaño de la imagen para celulares */
+    }
+}
+
+
+
 #resultado.visible {
     opacity: 1;
     transform: translateY(0);
