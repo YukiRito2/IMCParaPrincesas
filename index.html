@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula tu IMC Princesa por Valentine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calcula tu IMC Princesa</h1>
+        <h2>por Valentine</h2>
+        <form id="imcForm">
+            <div class="form-group">
+                <label for="peso">Peso (kg):</label>
+                <input type="number" id="peso" name="peso" required>
+            </div>
+            <div class="form-group">
+                <label for="altura">Estatura (cm):</label>
+                <input type="number" id="altura" name="altura" required>
+            </div>
+            <div class="form-group">
+                <label for="imc">IMC:</label>
+                <input type="text" id="imc" name="imc" readonly>
+            </div>
+            <button type="button" onclick="calcularIMC()">Calcular</button>
+            <button type="reset" onclick="resetIMC()">Borrar</button>
+        </form>
+        <div id="mensaje">
+            <p>Tu cuerpo dice: "Y así te haces llamar princesa" gorda.</p>
+            <p>En boca cerrada </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
