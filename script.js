@@ -13,17 +13,17 @@ function calcularIMC() {
     let mensaje = '';
 
     if (imc < 18.5) {
-        mensaje = 'Bajo peso';
+        mensaje = "Engolde ma' ese toto mami, que ese toto seco como la cara de Nicky Jama como que no dan emoción (↼_↼)";
     } else if (imc >= 18.5 && imc < 23) {
-        mensaje = 'Peso normal';
+        mensaje = 'Estas en tu punto (ﾐ`ω´ﾐ)';
     } else if (imc >= 23 && imc < 25) {
         mensaje = 'Y así te haces llamar "princesa" gorda.';
     } else if (imc >= 25 && imc < 30) {
-        mensaje = 'Obesidad leve';
+        mensaje = 'JAJAJAJA WARZONE ';
     } else if (imc >= 30 && imc < 35) {
-        mensaje = 'Obesidad moderada';
+        mensaje = 'SI me dices que huelo bien, es halago o amenaza?';
     } else if (imc >= 35) {
-        mensaje = 'Obesidad severa';
+        mensaje = 'Bb me avisas cuando sales en kilos mortales';
     }
 
     document.getElementById('resultado').innerText = mensaje;
