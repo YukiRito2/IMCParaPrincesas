@@ -49,7 +49,7 @@ button {
     padding: 10px 20px;
     margin: 5px;
     border: none;
-    border-radius: 5px;
+    border-radius: 0px;
     background-color: #ff69b4;
     color: white;
     cursor: pointer;
@@ -61,10 +61,14 @@ button:hover {
 }
 
 #mensaje {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
-.boca-cerrada {
-    color: #ff69b4;
-    font-size: 1.5em;
+#resultado {
+    margin-top: 10px;
+    border: 1px solid #ff69b4;
+    padding: 10px;
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 5px;
 }

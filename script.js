@@ -8,21 +8,28 @@ function calcularIMC() {
     }
 
     const imc = peso / (altura * altura);
-    let resultado = '';
+    document.getElementById('imc').value = imc.toFixed(2);
+
+    let mensaje = '';
 
     if (imc < 18.5) {
-        resultado = 'Anorexica';
-    } else if (imc >= 18.5 && imc < 24.9) {
-        resultado = 'Flaca';
-    } else if (imc >= 25 && imc < 29.9) {
-        resultado = 'Sobrepeso';
-    } else if (imc >= 30) {
-        resultado = 'Gorda';
+        mensaje = 'Bajo peso';
+    } else if (imc >= 18.5 && imc < 23) {
+        mensaje = 'Peso normal';
+    } else if (imc >= 23 && imc < 25) {
+        mensaje = 'Y así te haces llamar "princesa" gorda.';
+    } else if (imc >= 25 && imc < 30) {
+        mensaje = 'Obesidad leve';
+    } else if (imc >= 30 && imc < 35) {
+        mensaje = 'Obesidad moderada';
+    } else if (imc >= 35) {
+        mensaje = 'Obesidad severa';
     }
 
-    document.getElementById('imc').value = `${imc.toFixed(2)} - ${resultado}`;
+    document.getElementById('resultado').innerText = mensaje;
 }
 
 function resetIMC() {
     document.getElementById('imc').value = '';
+    document.getElementById('resultado').innerText = '';
 }
